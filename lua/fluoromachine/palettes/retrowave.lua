@@ -18,13 +18,14 @@ local colors = {
   sign_change = '#ff8b39',
   sign_delete = '#fe4450',
   error = '#fe4450',
-  warning = '#ffcccc',
+  warning = '#ffb3b3', -- here
   info = '#61E2FF',
   hint = '#61E2FF',
   other = '#AF6DF9',
   blankline = '#57367C',
   active_blankline = '#39785C',
   inlay_hint = '#CC64AF',
+  cblue = '#599eff' -- here
 }
 
 return colors

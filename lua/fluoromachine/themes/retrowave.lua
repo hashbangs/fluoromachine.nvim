@@ -3,8 +3,8 @@ local theme = {}
 
 theme.set_highlights = function(c)
   -- highlights
-  hl(0, 'Normal', { fg = c.fg, bg = c.bg })
-  hl(0, 'SignColumn', { fg = 'NONE', bg = c.bg })
+  hl(0, 'Normal', { fg = c.fg, bg = 'NONE' }) -- here
+  hl(0, 'SignColumn', { fg = 'NONE', bg = 'NONE' }) -- here
   hl(0, 'MsgArea', { link = 'Normal' })
   hl(0, 'ModeMsg', { fg = c.fg, bg = c.bg, bold = true })
   hl(0, 'MsgSeparator', { fg = c.fg, bg = c.bg, bold = true })
@@ -20,15 +20,15 @@ theme.set_highlights = function(c)
   hl(0, 'Comment', { fg = c.comment, bg = 'NONE', italic = true })
   hl(0, 'Folded', { fg = c.comment, bg = c.selection })
   hl(0, 'FoldColumn', { fg = c.fg, bg = c.bg })
-  hl(0, 'LineNr', { fg = c.comment, bg = c.bg })
+  hl(0, 'LineNr', { fg = c.cblue, bg = 'NONE' }) -- here
   hl(0, 'FloatBorder', { fg = c.comment, bg = c.alt_bg })
   hl(0, 'Whitespace', { fg = c.bg, bg = 'NONE' })
-  hl(0, 'WinSeparator', { fg = c.comment, bg = c.alt_bg })
+  hl(0, 'WinSeparator', { fg = c.comment, bg = 'NONE'}) -- here
   hl(0, 'VertSplit', { link = 'WinSeparator' })
   hl(0, 'CursorLine', { fg = 'NONE', bg = c.currentline })
   hl(0, 'CursorColumn', { link = 'CursorLine' })
   hl(0, 'ColorColumn', { fg = 'NONE', bg = c.alt_bg })
-  hl(0, 'NormalFloat', { fg = c.fg, bg = c.alt_bg })
+  hl(0, 'NormalFloat', { fg = c.fg, bg = 'NONE' }) -- here
   hl(0, 'Visual', { fg = 'NONE', bg = c.selection })
   hl(0, 'VisualNOS', { link = 'Visual' })
   hl(0, 'WarningMsg', { fg = c.warning, bg = c.bg })
@@ -60,7 +60,7 @@ theme.set_highlights = function(c)
   hl(0, 'EndOfBuffer', { fg = c.bg, bg = 'NONE' })
   hl(0, 'NonText', { fg = c.comment, bg = 'NONE' })
   hl(0, 'Variable', { fg = c.fg, bg = 'NONE' })
-  hl(0, 'String', { fg = c.orange, bg = 'NONE' })
+  hl(0, 'String', { fg = c.fg, bg = 'NONE' })
   hl(0, 'Character', { fg = c.orange, bg = 'NONE' })
   hl(0, 'Constant', { fg = c.red, bg = 'NONE' })
   hl(0, 'Number', { fg = c.red, bg = 'NONE' })
@@ -96,7 +96,7 @@ theme.set_highlights = function(c)
   hl(0, 'Ignore', { fg = c.purple, bg = c.bg, bold = true })
   hl(0, 'Todo', { fg = c.cyan, bg = 'NONE', bold = true })
   hl(0, 'Error', { fg = c.error, bg = 'NONE', bold = true })
-  hl(0, 'TabLine', { fg = c.comment, bg = c.bg })
+  hl(0, 'TabLine', { fg = c.comment, bg = 'NONE' })
   hl(0, 'TabLineSel', { link = 'Normal' })
   hl(0, 'TabLineFill', { fg = 'NONE', bg = c.bg })
 
@@ -355,8 +355,8 @@ theme.set_highlights = function(c)
   hl(0, 'NvimTreeGitDirty', { fg = c.sign_change, bg = 'NONE' })
 
   -- NeoTree
-  hl(0, 'NeoTreeNormal', { link = 'NormalFloat' })
-  hl(0, 'NeoTreeNormalNC', { link = 'NormalFloat' })
+  hl(0, 'NeoTreeNormal', { bg = 'NONE' }) -- here
+  hl(0, 'NeoTreeNormalNC', { bg = 'NONE' }) -- here
   hl(0, 'NeoTreeEndOfBuffer', { fg = c.alt_bg, bg = 'NONE' })
   hl(0, 'NeoTreeRootName', { link = 'Directory' })
   hl(0, 'NeoTreeFileName', { fg = c.fg, bg = 'NONE' })

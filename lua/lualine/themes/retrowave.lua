@@ -23,6 +23,6 @@ return {
     a = { bg = colors.red, fg = d(colors.red, 50), gui = 'bold' },
   },
   command = {
-    a = { bg = colors.orange, fg = d(colors.orange, 50), gui = 'bold' },
+    a = { bg = colors.pink, fg = d(colors.pink, 50), gui = 'bold' },
   },
 }
